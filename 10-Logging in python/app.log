@@ -1,0 +1,12 @@
+2026-03-02 18:19:03 - arthematicLogger - DEBUG - Adding 10 and 5
+2026-03-02 18:19:03 - arthematicLogger - INFO - Subtracting 5 from 10
+2026-03-02 18:19:03 - arthematicLogger - WARNING - Multiplying 10 and 5
+2026-03-02 18:19:03 - arthematicLogger - INFO - Dividing 10 by 5
+2026-03-02 18:19:03 - arthematicLogger - INFO - Dividing 10 by 0
+2026-03-02 18:19:03 - arthematicLogger - ERROR - Attempted to divide 10 by zero
+2026-03-02 18:23:45 - arthematicLogger - DEBUG - Adding 10 and 5
+2026-03-02 18:23:45 - arthematicLogger - INFO - Subtracting 5 from 10
+2026-03-02 18:23:45 - arthematicLogger - WARNING - Multiplying 10 and 5
+2026-03-02 18:23:45 - arthematicLogger - INFO - Dividing 10 by 5
+2026-03-02 18:23:45 - arthematicLogger - INFO - Dividing 10 by 0
+2026-03-02 18:23:45 - arthematicLogger - ERROR - Attempted to divide 10 by zero

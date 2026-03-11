@@ -1,1 +1,7 @@
+# Core numerical library
 numpy
+
+# HTML parsing
+bs4
+# HTTP requests for web scraping
+requests

@@ -1,6 +1,6 @@
 # Python Revision Hub
 
-This README combines the available revision notes across the `Python` folder into one quick-glance document.
+This README combines the revision notes across the `Python` folder into one quick-glance document.
 
 Use this file when you want:
 - a fast revision pass before practice or interviews
@@ -11,15 +11,53 @@ Use this file when you want:
 
 | Topic | Detailed Revision File |
 | --- | --- |
+| Python Basics | [Python-Basics-Quick-Revision.md](./1-Python%20Basics/Python-Basics-Quick-Revision.md) |
+| Loops and Conditional Statements | [Loops-and-Conditional-Statements-Quick-Revision.md](./2-Loops%20and%20Conditional%20Statements/Loops-and-Conditional-Statements-Quick-Revision.md) |
 | Data Structures | [Data-Structures-Quick-Revision.md](./3-Data%20Structures/Data-Structures-Quick-Revision.md) |
 | Functions | [Functions-Quick-Revision.md](./4-Functions/Functions-Quick-Revision.md) |
 | Importing Modules | [Importing-Modules-Quick-Revision.md](./5-Importing%20Modules/Importing-Modules-Quick-Revision.md) |
 | File Handling | [File-Handling-Quick-Revision.md](./6-File%20Handling/File-Handling-Quick-Revision.md) |
 | Exceptions | [Exceptions-Quick-Revision.md](./7-Exceptions/Exceptions-Quick-Revision.md) |
+| OOPs | [OOPs-Quick-Revision.md](./8-OOPS/OOPs-Quick-Revision.md) |
+| Advance Python | [Advance-Python-Quick-Revision.md](./9-Advance%20Python/Advance-Python-Quick-Revision.md) |
+| Logging in Python | [Logging-in-Python-Quick-Revision.md](./10-Logging%20in%20python/Logging-in-Python-Quick-Revision.md) |
 | Multithreading and Multiprocessing | [REVISION.md](./11-MultiThreadding/REVISION.md) |
 | Memory Management | [REVISION.md](./12-Memory%20Management/REVISION.md) |
+| Data Analysis | [Data-Analysis-Quick-Revision.md](./13-Data%20Analysis/Data-Analysis-Quick-Revision.md) |
 
-## 1. Data Structures
+## 1. Python Basics
+
+Source: [Python-Basics-Quick-Revision.md](./1-Python%20Basics/Python-Basics-Quick-Revision.md)
+
+### Quick glance
+- Python is case-sensitive and uses indentation to define code blocks.
+- Variables are dynamically typed references to values.
+- Common data types include `int`, `float`, `str`, and `bool`.
+- Core operators include arithmetic, comparison, and logical operators.
+
+### Interview points
+- syntax vs semantics
+- dynamic typing
+- float precision
+- `/` vs `//`
+
+## 2. Loops and Conditional Statements
+
+Source: [Loops-and-Conditional-Statements-Quick-Revision.md](./2-Loops%20and%20Conditional%20Statements/Loops-and-Conditional-Statements-Quick-Revision.md)
+
+### Quick glance
+- `if`, `elif`, and `else` are used for decision making.
+- `for` loops are best for iterables and ranges.
+- `while` loops are best when repetition depends on a changing condition.
+- `break`, `continue`, and `pass` modify loop flow.
+
+### Interview points
+- `for` vs `while`
+- `break` vs `continue`
+- nested loops
+- leap year and prime number logic
+
+## 3. Data Structures
 
 Source: [Data-Structures-Quick-Revision.md](./3-Data%20Structures/Data-Structures-Quick-Revision.md)
 
@@ -27,27 +65,15 @@ Source: [Data-Structures-Quick-Revision.md](./3-Data%20Structures/Data-Structure
 - `list`: ordered, mutable, allows duplicates
 - `tuple`: ordered, immutable, allows duplicates
 - `set`: unordered, mutable, unique values only
-- `dict`: key-value mapping, keys must be unique and immutable
-
-### Must-remember points
-- Use `list` for sequence processing and updates.
-- Use `tuple` for fixed records and unpacking.
-- Use `set` for fast membership checks and duplicate removal.
-- Use `dict` for mapping, counting, and structured key-value data.
-
-### Frequently revised operations
-- Lists: `append()`, `insert()`, `remove()`, `pop()`, slicing, sorting
-- Tuples: packing, unpacking, `count()`, `index()`
-- Sets: union, intersection, difference, subset, superset
-- Dicts: `get()`, `items()`, `keys()`, `values()`, comprehensions, merge
+- `dict`: key-value mapping with unique keys
 
 ### Interview points
-- List vs tuple: mutability
-- Set membership is usually faster than list membership
+- list vs tuple
+- set lookup speed
 - `d[key]` vs `d.get(key)`
-- Shallow copy vs reference copy
+- shallow copy vs reference copy
 
-## 2. Functions
+## 4. Functions
 
 Source: [Functions-Quick-Revision.md](./4-Functions/Functions-Quick-Revision.md)
 
@@ -57,25 +83,13 @@ Source: [Functions-Quick-Revision.md](./4-Functions/Functions-Quick-Revision.md)
 - `map()` transforms items.
 - `filter()` selects items based on a condition.
 
-### Must-remember points
-- Functions can use positional arguments, default arguments, `*args`, and `**kwargs`.
-- A Python function can return one value, multiple values, or `None`.
-- `lambda` supports only a single expression.
-- `map()` and `filter()` return lazy iterators in Python 3.
-
-### Common usage patterns
-- `def` for reusable or multi-step logic
-- `lambda` for short inline operations
-- `map()` for element-wise transformation
-- `filter()` for condition-based selection
-
 ### Interview points
 - `def` vs `lambda`
 - `map()` vs list comprehension
 - `filter()` vs list comprehension
 - `*args` vs `**kwargs`
 
-## 3. Importing Modules
+## 5. Importing Modules
 
 Source: [Importing-Modules-Quick-Revision.md](./5-Importing%20Modules/Importing-Modules-Quick-Revision.md)
 
@@ -83,55 +97,23 @@ Source: [Importing-Modules-Quick-Revision.md](./5-Importing%20Modules/Importing-
 - A module is a single `.py` file.
 - A package is a folder of related modules.
 - Imports help organize and reuse code.
-
-### Common import styles
-- `import math`
-- `from math import sqrt`
-- `import numpy as np`
-- Avoid `from module import *` in real projects
-
-### Useful standard library topics
-- `math` for numeric operations
-- `random` for random values
-- `os` for file and directory operations
-- `shutil` for higher-level file copying and moving
-- `json` for serialization
-- `csv` for CSV handling
-- `datetime` for dates and times
-- `re` for regular expressions
+- Alias imports improve readability in common cases such as `import numpy as np`.
 
 ### Interview points
-- Module vs package
-- Alias imports
-- Why wildcard imports are discouraged
+- module vs package
+- alias imports
+- wildcard imports
 - `json.dumps()` vs `json.loads()`
 
-## 4. File Handling
+## 6. File Handling
 
 Source: [File-Handling-Quick-Revision.md](./6-File%20Handling/File-Handling-Quick-Revision.md)
 
 ### Quick glance
 - File handling includes reading, writing, appending, and path management.
 - Prefer `with open(...)` so files are closed automatically.
-
-### Must-remember file modes
-- `'r'`: read
-- `'w'`: write and overwrite
-- `'a'`: append
-- `'rb'` / `'wb'`: binary read/write
-
-### Common operations
-- `read()` for full content
-- Loop line-by-line for large files
-- `write()` and `writelines()` for output
-- Use binary mode for images and raw bytes
-
-### Path utilities
-- `os.path.exists()`
-- `os.path.isfile()`
-- `os.path.isdir()`
-- `os.path.abspath()`
-- `os.path.join()`
+- Remember text and binary modes.
+- Path utilities from `os.path` are important in real programs.
 
 ### Interview points
 - `'w'` vs `'a'`
@@ -139,37 +121,71 @@ Source: [File-Handling-Quick-Revision.md](./6-File%20Handling/File-Handling-Quic
 - why `with open(...)` is preferred
 - `exists()` vs `isfile()`
 
-## 5. Exceptions
+## 7. Exceptions
 
 Source: [Exceptions-Quick-Revision.md](./7-Exceptions/Exceptions-Quick-Revision.md)
 
 ### Quick glance
 - Exceptions are runtime errors that interrupt normal program flow.
-- Exception handling keeps programs stable and user-friendly.
-
-### Core structure
-- `try`: risky code
-- `except`: matching error handling
-- `else`: runs only if no exception occurs
-- `finally`: always runs
-
-### Must-remember points
+- `try`, `except`, `else`, and `finally` are the main handling blocks.
 - Catch specific exceptions before generic `Exception`.
-- Use `finally` for cleanup logic.
-- Use `with open(...)` to reduce manual cleanup needs.
-
-### Common exceptions
-- `ZeroDivisionError`
-- `ValueError`
-- `NameError`
-- `FileNotFoundError`
+- Use `finally` or context managers for cleanup.
 
 ### Interview points
 - `else` vs `finally`
-- Why broad `Exception` should be last
-- Multiple `except` blocks in one `try`
+- specific vs broad exceptions
+- multiple `except` blocks
+- cleanup patterns
 
-## 6. Multithreading and Multiprocessing
+## 8. OOPs
+
+Source: [OOPs-Quick-Revision.md](./8-OOPS/OOPs-Quick-Revision.md)
+
+### Quick glance
+- OOPs is based on classes and objects.
+- Core pillars are inheritance, polymorphism, encapsulation, and abstraction.
+- Magic methods customize object behavior.
+- Operator overloading lets custom objects work with operators like `+`.
+
+### Interview points
+- class vs object
+- method overriding
+- `super()`
+- `_name` vs `__name`
+
+## 9. Advance Python
+
+Source: [Advance-Python-Quick-Revision.md](./9-Advance%20Python/Advance-Python-Quick-Revision.md)
+
+### Quick glance
+- Iterators return one item at a time using `iter()` and `next()`.
+- Generators use `yield` for lazy value generation.
+- Decorators add reusable behavior around functions.
+- Closures help decorators remember outer-scope values.
+
+### Interview points
+- iterable vs iterator
+- generator vs list
+- `yield`
+- closures and decorators
+
+## 10. Logging in Python
+
+Source: [Logging-in-Python-Quick-Revision.md](./10-Logging%20in%20python/Logging-in-Python-Quick-Revision.md)
+
+### Quick glance
+- Logging tracks application events, warnings, and errors.
+- Standard levels are `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`.
+- `basicConfig()` sets up default logging behavior.
+- Handlers can send logs to both console and files.
+
+### Interview points
+- logging vs `print()`
+- log levels
+- handlers
+- multiple named loggers
+
+## 11. Multithreading and Multiprocessing
 
 Source: [REVISION.md](./11-MultiThreadding/REVISION.md)
 
@@ -177,78 +193,74 @@ Source: [REVISION.md](./11-MultiThreadding/REVISION.md)
 - Multithreading is best for I/O-bound tasks.
 - Multiprocessing is best for CPU-bound tasks.
 - `ThreadPoolExecutor` and `ProcessPoolExecutor` are higher-level APIs.
-
-### Threading summary
-- Threads share the same memory space.
-- Good for waiting tasks such as API calls, scraping, and file I/O.
-- Key methods: `Thread(...)`, `start()`, `join()`
-
-### Multiprocessing summary
-- Processes have separate memory spaces.
-- Good for computation-heavy tasks.
-- Key methods: `Process(...)`, `start()`, `join()`
-- On Windows, protect process code with `if __name__ == "__main__":`
-
-### Pool summary
-- `ThreadPoolExecutor`: modern thread pool API for I/O-bound work
-- `ProcessPoolExecutor`: modern process pool API for CPU-bound work
-- `multiprocessing.Pool()`: older multiprocessing-specific pool API
+- On Windows, process code should be protected by `if __name__ == "__main__":`.
 
 ### Interview points
-- Threading vs multiprocessing
-- ThreadPoolExecutor vs ProcessPoolExecutor
-- `multiprocessing.Pool()` vs `ProcessPoolExecutor()`
-- GIL effect on CPU-bound threading
+- threading vs multiprocessing
+- thread pools vs process pools
+- GIL impact
+- process startup safety on Windows
 
-## 7. Memory Management
+## 12. Memory Management
 
 Source: [REVISION.md](./12-Memory%20Management/REVISION.md)
 
 ### Quick glance
 - Python mainly uses reference counting and garbage collection.
-- Reference counting handles immediate cleanup.
-- Garbage collection handles unreachable circular references.
-
-### Core ideas
-- Variables hold references, not the object data itself.
+- Circular references need garbage collection.
 - `del` removes a reference name, not always the object immediately.
-- Circular references may survive until garbage collection runs.
-
-### Important tools
-- `sys.getrefcount()` to inspect references
-- `gc.enable()` / `gc.disable()` to control garbage collection
-- `gc.collect()` to trigger collection manually
-- `gc.get_stats()` to inspect GC activity
-- `tracemalloc` to profile memory usage
-
-### Memory-efficient practices
-- Prefer local variables where appropriate
-- Avoid unnecessary circular references
-- Use generators for large sequences
-- Profile memory when debugging heavy usage
+- `tracemalloc` helps profile memory usage.
 
 ### Interview points
-- Reference counting vs garbage collection
-- Why circular references need GC
-- How generators save memory
-- Why `del` does not always destroy an object immediately
+- reference counting vs garbage collection
+- circular references
+- generators and memory efficiency
+- `del` behavior
+
+## 13. Data Analysis
+
+Source: [Data-Analysis-Quick-Revision.md](./13-Data%20Analysis/Data-Analysis-Quick-Revision.md)
+
+### Quick glance
+- NumPy provides fast arrays and vectorized numerical operations.
+- Important array concepts are `shape`, `ndim`, and `reshape()`.
+- Boolean masking helps filter data efficiently.
+- Statistical helpers like `mean`, `median`, and `std` are common in analysis work.
+
+### Interview points
+- NumPy vs Python lists
+- vectorization
+- indexing and slicing
+- boolean masking
 
 ## Last-Minute Combined Checklist
 
+- Revise Python syntax, variables, data types, and operators.
+- Practice conditional logic, loops, and loop-control statements.
 - Know when to use `list`, `tuple`, `set`, and `dict`.
 - Be comfortable with function parameters, `lambda`, `map()`, and `filter()`.
 - Revise import styles and key standard library modules.
 - Remember file modes and always prefer `with open(...)`.
 - Be clear on `try`, `except`, `else`, and `finally`.
+- Review OOPs pillars, magic methods, and operator overloading.
+- Practice iterators, generators, and decorators.
+- Remember logging levels, handlers, and named loggers.
 - Use threads for I/O-bound tasks and processes for CPU-bound tasks.
 - Remember that Python memory management uses both reference counting and garbage collection.
+- Revise NumPy array creation, reshaping, vectorization, and masking.
 
 ## Quick Navigation
 
+- [Python Basics](./1-Python%20Basics/Python-Basics-Quick-Revision.md)
+- [Loops and Conditional Statements](./2-Loops%20and%20Conditional%20Statements/Loops-and-Conditional-Statements-Quick-Revision.md)
 - [Data Structures](./3-Data%20Structures/Data-Structures-Quick-Revision.md)
 - [Functions](./4-Functions/Functions-Quick-Revision.md)
 - [Importing Modules](./5-Importing%20Modules/Importing-Modules-Quick-Revision.md)
 - [File Handling](./6-File%20Handling/File-Handling-Quick-Revision.md)
 - [Exceptions](./7-Exceptions/Exceptions-Quick-Revision.md)
+- [OOPs](./8-OOPS/OOPs-Quick-Revision.md)
+- [Advance Python](./9-Advance%20Python/Advance-Python-Quick-Revision.md)
+- [Logging in Python](./10-Logging%20in%20python/Logging-in-Python-Quick-Revision.md)
 - [Multithreading and Multiprocessing](./11-MultiThreadding/REVISION.md)
 - [Memory Management](./12-Memory%20Management/REVISION.md)
+- [Data Analysis](./13-Data%20Analysis/Data-Analysis-Quick-Revision.md)

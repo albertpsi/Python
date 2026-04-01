@@ -21,7 +21,7 @@ Use this file when you want:
 | OOPs | [OOPs-Quick-Revision.md](./8-OOPS/OOPs-Quick-Revision.md) |
 | Advance Python | [Advance-Python-Quick-Revision.md](./9-Advance%20Python/Advance-Python-Quick-Revision.md) |
 | Logging in Python | [Logging-in-Python-Quick-Revision.md](./10-Logging%20in%20python/Logging-in-Python-Quick-Revision.md) |
-| Multithreading and Multiprocessing | [REVISION.md](./11-MultiThreadding/REVISION.md) |
+| Multithreading and Multiprocessing | [REVISION.md](./11-MultiThreading/REVISION.md) |
 | Memory Management | [REVISION.md](./12-Memory%20Management/REVISION.md) |
 | Data Analysis | [Data-Analysis-Quick-Revision.md](./13-Data%20Analysis/Data-Analysis-Quick-Revision.md) |
 
@@ -222,16 +222,20 @@ Source: [REVISION.md](./12-Memory%20Management/REVISION.md)
 Source: [Data-Analysis-Quick-Revision.md](./13-Data%20Analysis/Data-Analysis-Quick-Revision.md)
 
 ### Quick glance
-- NumPy provides fast arrays and vectorized numerical operations.
-- Important array concepts are `shape`, `ndim`, and `reshape()`.
-- Boolean masking helps filter data efficiently.
-- Statistical helpers like `mean`, `median`, and `std` are common in analysis work.
+- NumPy provides fast arrays, vectorized math, reshaping, slicing, and boolean masking.
+- Pandas covers `Series`, `DataFrame`, inspection, cleaning, grouping, and merging.
+- Data loading includes CSV, Excel, JSON, pickle, HTML tables, URLs, and in-memory strings.
+- Matplotlib gives low-level control for line, bar, histogram, scatter, and subplot-based charts.
+- Seaborn adds high-level statistical plots like bar, box, violin, pair, KDE, and heatmaps.
 
 ### Interview points
 - NumPy vs Python lists
+- `shape` vs `ndim`
 - vectorization
-- indexing and slicing
-- boolean masking
+- `Series` vs `DataFrame`
+- `fillna()` vs `merge()`
+- `pd.read_csv()` vs `pd.read_html()`
+- Matplotlib vs Seaborn
 
 ## Last-Minute Combined Checklist
 
@@ -248,6 +252,8 @@ Source: [Data-Analysis-Quick-Revision.md](./13-Data%20Analysis/Data-Analysis-Qui
 - Use threads for I/O-bound tasks and processes for CPU-bound tasks.
 - Remember that Python memory management uses both reference counting and garbage collection.
 - Revise NumPy array creation, reshaping, vectorization, and masking.
+- Revise Pandas inspection, cleaning, grouping, merging, and multi-source loading.
+- Practice Matplotlib and Seaborn plots, especially the sales charts and correlation heatmaps.
 
 ## Quick Navigation
 
@@ -261,6 +267,6 @@ Source: [Data-Analysis-Quick-Revision.md](./13-Data%20Analysis/Data-Analysis-Qui
 - [OOPs](./8-OOPS/OOPs-Quick-Revision.md)
 - [Advance Python](./9-Advance%20Python/Advance-Python-Quick-Revision.md)
 - [Logging in Python](./10-Logging%20in%20python/Logging-in-Python-Quick-Revision.md)
-- [Multithreading and Multiprocessing](./11-MultiThreadding/REVISION.md)
+- [Multithreading and Multiprocessing](./11-MultiThreading/REVISION.md)
 - [Memory Management](./12-Memory%20Management/REVISION.md)
 - [Data Analysis](./13-Data%20Analysis/Data-Analysis-Quick-Revision.md)

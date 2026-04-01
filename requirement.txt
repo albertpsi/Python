@@ -1,7 +1,16 @@
+# install these packages using cmd - pip install -r ./requirement.txt
+
 # Core numerical library
 numpy
 
-# HTML parsing
-bs4
-# HTTP requests for web scraping
+# HTML parsing and web scraping
 requests
+
+# Pandas
+pandas
+lxml
+html5lib
+beautifulsoup4
+openpyxl
+matplotlib
+seaborn
